@@ -10,7 +10,7 @@ p{ color: blue;
 
 }
 
-.menu {list-style-type: none;
+.menu a {list-style-type: none;
 background-color: black;
 color: maroon;
 }
