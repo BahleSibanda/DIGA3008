@@ -8,7 +8,8 @@ p{ color: blue;
 .list{ list-style: square;
     color: orange;
 
-
 }
+
+.menu {list-style-type: none;}
     
 
