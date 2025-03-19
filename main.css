@@ -5,7 +5,11 @@ p{ color: blue;
    font: 18px ;
 }
 
-.list{}
+.list{ list-style: square;
+    color: orange;
+
+
+}
     
 } 
 
