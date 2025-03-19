@@ -11,8 +11,10 @@ p{ color: blue;
 }
 
 .menu a {list-style-type: none;
-background-color: black;
+background-color: rgb(185, 171, 171);
 color: maroon;
 }
+
+.menu {list-style-type: none;}
     
 
