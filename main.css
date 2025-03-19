@@ -10,6 +10,9 @@ p{ color: blue;
 
 }
 
-.menu {list-style-type: none;}
+.nav a {list-style-type: none;
+background-color: black;
+color: maroon;
+}
     
 
