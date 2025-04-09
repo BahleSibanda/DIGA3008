@@ -1,4 +1,5 @@
-h1{ color: rgb(216, 58, 113);
+h1{ 
+    color: rgb(216, 58, 113);
 }
 
 p{ color: blue;
@@ -6,15 +7,21 @@ p{ color: blue;
 }
 
 .list{ list-style: square;
-    color: orange;
+    color: orange;}
 
+ 
+
+.menu a{
+    list-style-type:decimal;
+    text-decoration: none;
 }
 
-.menu a {list-style-type: none;
+.menulinks a {
+list-style-type: none;
+text-decoration: none;
 background-color: rgb(185, 171, 171);
 color: maroon;
 }
 
-.menu {list-style-type: none;}
     
 
