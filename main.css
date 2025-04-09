@@ -10,17 +10,15 @@ p{ color: blue;
     color: orange;}
 
  
-
-.menu a{
-    list-style-type:decimal;
-    text-decoration: none;
-}
-
-.menulinks a {
+.menulinks {
 list-style-type: none;
 text-decoration: none;
 background-color: rgb(185, 171, 171);
 color: maroon;
+font-size: large;
+font-weight: bold;
+border-width: 0cm;
+border-radius: 0.5cm;
 }
 
     
