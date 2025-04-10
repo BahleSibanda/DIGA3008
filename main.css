@@ -2,24 +2,19 @@ h1{
     color: rgb(216, 58, 113);
 }
 
-p{ color: blue;
-   font: 18px ;
+body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-image: url(images/Jackies\ Journal.jpeg); 
+background-size: cover;
+height: 100vh;
 }
 
-.list{ list-style: square;
-    color: orange;}
-
- 
-.menulinks {
-list-style-type: none;
-text-decoration: none;
-background-color: rgb(185, 171, 171);
-color: maroon;
-font-size: large;
-font-weight: bold;
-border-width: 0cm;
-border-radius: 0.5cm;
+nav{ 
+ background-color:#8b1411 ;
+ backdrop-filter: transparent (7px) ;
+ height: 100px;
+ width: 100%;
 }
+
 
     
 
