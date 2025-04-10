@@ -9,12 +9,22 @@ height: 100vh;
 }
 
 nav{ 
- background-color:#8b1411 ;
- backdrop-filter: transparent (7px) ;
+ background-color:none;
  height: 100px;
  width: 100%;
 }
 
+nav ul{
+font-style: italic;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li{
+display: inline-block; 
+font-size: 30px;
+color: #881c28;
+margin: 50px;
+}
 
     
 
