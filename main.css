@@ -17,13 +17,33 @@ nav{
 nav ul{
 font-style: italic;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #881c28;
 }
 
 nav ul li{
 display: inline-block; 
 font-size: 30px;
-color: #881c28;
 margin: 50px;
+}
+
+.menu .menulinks a{
+color: #881c28 ;
+text-decoration: none;
+}
+
+.hover-oval{ display: inline-block;
+padding: 8px 16px;
+text-decoration: none;
+color:none;
+transition: all 0.3s ease;
+}
+
+.hover-oval:hover {
+background-color: #dd979f;
+border: 2px solid #dd979f;
+border-radius: 999px;
+
+
 }
 
     
