@@ -24,6 +24,9 @@ nav ul li{
 display: inline-block;
 font-size: 30px;
 margin: 60px;
+text-transform: uppercase;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
 }
 
 .menu .menulinks a{
@@ -43,6 +46,50 @@ background-color: #dd979f;
 border: 2px solid #dd979f;
 border-radius: 999px;
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  
+  
+
 
 
 
