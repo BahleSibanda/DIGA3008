@@ -21,9 +21,9 @@ color: #881c28;
 }
 
 nav ul li{
-display: inline-block; 
+display: inline-block;
 font-size: 30px;
-margin: 50px;
+margin: 60px;
 }
 
 .menu .menulinks a{
@@ -42,9 +42,9 @@ transition: all 0.3s ease;
 background-color: #dd979f;
 border: 2px solid #dd979f;
 border-radius: 999px;
-
-
 }
+
+
 
     
 
