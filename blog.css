@@ -1,0 +1,26 @@
+body{
+margin: 0px;
+padding: 0px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.blogs{
+display: flex;    
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 40px;
+}
+
+.blog-heading{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column ;
+}
+
+.blog-heading h3{
+font-size: 20px;
+color:#881c28 ;
+
+}
