@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,26 +24,68 @@
     <main class="portfolio">
         <section class="portfolio-section">
           <a href="../portfolio/essays.html" class="portfolio-title">Essays</a>
-          <!-- <section class="portfolio-image">
+          <!<section class="portfolio-image">
             <img src="../images/Essays.jpeg" alt="Screenshot of Essay">
           </section> -->
-        </section>
+        <!-- </section>
       
         <section class="portfolio-section">
           <a href="../portfolio/art.html" class="portfolio-title">Art</a>
-          <!-- <section class="portfolio-image">
-            <img src="../images/Art.jpeg" alt="Collage of Jackie">
-          </section> -->
-        </section>
-      
-        <section class="portfolio-section">
-          <a href="../portfolio/photography.html" class="portfolio-title">Photography</a>
-          <!-- <section class="portfolio-image">
-            <img src="../images/Photography.jpeg" alt="Image">
-          </section> -->
-        </section>
-      </main>
-      
-  
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  <link rel="stylesheet" href="/portfolio.css"/>
+  <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="menulinks">
+        <li><a href="../index.html" class="hover-oval">home</a></li>
+        <li><a href="../about/about.html" class="hover-oval">about</a></li>
+        <li><a href="../blogs/blogs.html" class="hover-oval">blogs</a></li>
+        <li><a href="../portfolio/portfolio.html" class="hover-oval active-link">portfolio</a></li>
+        <li><a href="../design/design.html" class="hover-oval">design</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="scroll-container">
+    <!-- Art -->
+    <section class="portfolio-section" id="art">
+      <div class="portfolio-box">
+        <img src="../images/Art.jpeg" alt="Art" />
+        <div class="overlay-text">
+          <a href="../portfolio/art.html">Art</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photography -->
+    <section class="portfolio-section" id="photography">
+      <div class="portfolio-box">
+        <img src="../images/Photography.jpeg" alt="Photography" />
+        <div class="overlay-text">
+          <a href="../portfolio/photography.html">Photography</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Essays -->
+    <section class="portfolio-section" id="essays">
+      <div class="portfolio-box">
+        <img src="../images/Essays.jpeg" alt="Essays" />
+        <div class="overlay-text">
+          <a href="../portfolio/essays.html">Essays</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
