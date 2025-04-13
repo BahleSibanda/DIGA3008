@@ -4,6 +4,7 @@ nav{
  width: 100%;
  border-bottom: 2px #881c28;
  position: sticky;
+ top: 0;
 }
 
 nav ul{
@@ -62,10 +63,6 @@ border: 2px solid #dd979f;
 border-radius: 999px;
 }
 
-.hero h1{ 
-
-
-}
 
 
 footer {
