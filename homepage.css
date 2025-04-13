@@ -1,9 +1,15 @@
 body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(images/Jackies\ Journal.jpeg); 
     background-size: cover;
     height: 100vh;
     }
 
-.hero h1{ text-align: left;
-
-}
+.hero{ content: "Bahle's Biblioteca";
+    font-family: var(--header-font);
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0 30px;
+    letter-spacing: 2px;
+    }
+      
