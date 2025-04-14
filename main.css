@@ -44,6 +44,15 @@ text-align: center;
   border: 2px solid #dd979f;
 }
 
+.hover-oval.active-link {
+  background-color: #881c28;
+  color: #fff1ee;
+  font-weight: bold;
+  border: 2px solid #881c28;
+}
+
+
+
 .menu-slide {
   position: fixed;
   top: 0;
