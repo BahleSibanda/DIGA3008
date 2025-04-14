@@ -37,10 +37,12 @@ body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #5c2a3c; /* Change to any color you want */
         font-family: 'Georgia', serif; /* Optional: Customize font */
         padding: 20px 20px; /* Some spacing around the section */
+        font-size: large;
       }
       
 .Introduction p {
         margin-bottom: 1em; /* Space between the two paragraphs */
         font-size: 1.2rem;   /* Slightly larger text */
       }
+
 
