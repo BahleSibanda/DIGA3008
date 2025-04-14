@@ -1,7 +1,7 @@
 body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-size: cover;
     height: 100vh;
-    background-image: url("/images/BackgroundIMG2.jpeg");
+    background-image: url("./images/backgroundimage4.jpeg");
     }
 
 .hero{
@@ -23,19 +23,19 @@ section {
 }
 
 
-.introduction {
+/* .introduction {
   text-align: center;
   padding: 20px 40px;
-  color: #5c2a3c;
+  color: #000000;
   font-family: 'Georgia', serif;
-  font-size: 30px;
+  font-size: 50px;
   max-width: 90%;
   margin: 0 auto;
   margin-top: auto;
-}
+} */
 
 .content-section {
-  background-color: #f9f4f5;
+  background-color: rgb(101, 34, 34);
   padding: 40px 20px;
   margin: 0 auto;
   max-width: 600px;
@@ -48,7 +48,7 @@ section {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #5c2a3c;
+  color: #fffefe;
   margin-bottom: 30px;
   font-family: 'Georgia', serif;
 }
@@ -83,7 +83,7 @@ section {
 .about-text {
   flex: 1;
   font-size: 1.1rem;
-  color: #333;
+  color: #ececec;
   font-family: 'Georgia', serif;
   line-height: 1.6;
 }
