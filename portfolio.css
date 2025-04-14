@@ -12,6 +12,19 @@ html, body {
   height: 100%;
 }
 
+.portfolio-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column 
+}
+
+.portfolio-heading h2{
+  font-size: 20px;
+  color:#881c28 ;
+
+}
+
 /* ====== MAIN CONTAINER WITH SCROLL SNAP ====== */
 main.scroll-container {
   scroll-snap-type: y mandatory;
