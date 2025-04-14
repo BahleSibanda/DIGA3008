@@ -12,34 +12,35 @@ html, body {
   height: 100%;
 }
 
-.portfolio-heading{
+.portfolio-heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column 
+  flex-direction: column;
+  padding: 40px 0 10px; /* top space, small bottom space */
 }
 
-.portfolio-heading h2{
-  font-size: 20px;
-  color:#881c28 ;
-
+.portfolio-heading h2 {
+  font-size: 48px; /* Bigger text */
+  color: #881c28;
+  margin-bottom: 10px; /* small space between heading and section */
 }
 
-/* ====== MAIN CONTAINER WITH SCROLL SNAP ====== */
 main.scroll-container {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   height: 50vh;
   margin-top: 0%;}
 
-/* ====== SECTION STYLING ====== */
 .portfolio-section {
   scroll-snap-align: start;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px;
+  padding: 2px 2px;         /* Less padding */
+  margin-bottom: 2px;       /* Smaller bottom margin */
+  margin-top: 0%;
 }
 
 /* ====== PORTFOLIO BOX ====== */
@@ -50,7 +51,7 @@ main.scroll-container {
   height: 400px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 12px 24px rgba(250, 104, 104, 0.15);
+  box-shadow: 0 12px 24px rgba(38, 32, 32, 0.15);
   background-color: #ffc6c6;
 }
 
@@ -71,7 +72,7 @@ main.scroll-container {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 15px 30px;
-  border-radius: 12px;
+  border-radius: 6px;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
