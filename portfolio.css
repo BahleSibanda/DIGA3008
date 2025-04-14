@@ -30,9 +30,7 @@ main.scroll-container {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   height: 50vh;
-  padding: 20px;
-  padding-left: 10px;
-}
+  margin-top: 0%;}
 
 /* ====== SECTION STYLING ====== */
 .portfolio-section {
