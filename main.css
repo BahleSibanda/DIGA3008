@@ -1,5 +1,5 @@
 nav{ 
- background-color:#fff1ee;
+ background-color:#ffeeee;
  height: 100px;
  width: 100%;
  border-bottom: 2px #881c28;
@@ -15,7 +15,7 @@ list-style: none;
 margin: 0;
 padding: 0;
 text-align: center;
-border-bottom: 2px solid black;
+/* border-bottom: 2px solid black; */
 }
 
 
@@ -29,13 +29,6 @@ text-align: center;
 
 }
 
-/* nav ul li.active{
-    background-color: #dd979f;
-    border: 4px solid #dd979f;
-    border-radius: 999px;
-    color: #881c28;
-    text-decoration: none;
-} */
 
 .hover-oval.active-link{
   background-color: #dd979f;
@@ -71,7 +64,6 @@ font-style: italic;
 
 
 footer {
-    background-color: #ffffff07;
     color: #fff;
     padding: 2px 0;
     text-align: center;

@@ -1,15 +1,46 @@
 body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-size: cover;
     height: 100vh;
+    background-image: url("/images/BackgroundIMG3.jpeg");
     }
 
-.hero{ content: "Bahle's Biblioteca";
-    font-family: var(--header-font);
-    font-size: 72px;
-    font-weight: 400;
-    text-align: center;
-    width: 100%;
-    padding: 60px 0 30px;
-    letter-spacing: 2px;
-    }
+.hero{
+      font-size: 72px;
+      font-weight: 400;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      width: 100%;
+      padding: 60px 0 30px;
+      letter-spacing: 2px;
+      color: #881c28;
+      padding-top: 50px;
+      font-style: italic;
+      }
       
+/* .oval-text{
+        padding: 50px;
+        width: 300px;
+        height: 60px;
+        background-color: #dd979f;
+        border-radius: 50%/50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+        margin: 20px auto;
+        font-family: 'Playfair Display', serif;
+      } */
+
+.Introduction {
+        text-align: center;
+        color: #5c2a3c; /* Change to any color you want */
+        font-family: 'Georgia', serif; /* Optional: Customize font */
+        padding: 20px 20px; /* Some spacing around the section */
+      }
+      
+.Introduction p {
+        margin-bottom: 1em; /* Space between the two paragraphs */
+        font-size: 1.2rem;   /* Slightly larger text */
+      }
+
