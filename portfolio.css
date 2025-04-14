@@ -29,8 +29,10 @@ html, body {
 main.scroll-container {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
-  height: 50vh;
-  margin-top: 0%;}
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
 .portfolio-section {
   scroll-snap-align: start;
@@ -46,13 +48,14 @@ main.scroll-container {
 /* ====== PORTFOLIO BOX ====== */
 .portfolio-box {
   position: relative;
-  width: 100%;
-  max-width: 1000px;
-  height: 400px;
+  width: 90%;
+  max-width: 900px;
+  height: 80vh;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 12px 24px rgba(38, 32, 32, 0.15);
   background-color: #ffc6c6;
+  margin: 0;
 }
 
 /* ====== IMAGE STYLING ====== */
