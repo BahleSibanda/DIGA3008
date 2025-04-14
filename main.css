@@ -15,121 +15,100 @@ list-style: none;
 margin: 0;
 padding: 0;
 text-align: center;
-border-bottom: 2px solid black;
+/* border-bottom: 2px solid black;
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: center; */
 }
 
 
 nav ul li{
 display: inline-block;
 font-size: 15px;
-margin: 20px;
+margin: 40px;
 text-transform: uppercase;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 text-align: center;
 
 }
 
-
-.hover-oval.active-link{
-  background-color: #dd979f;
-  border: 2px solid #dd979f;
-  border-radius: 999px;
-
-}
-
 .menulinks a{
-color: #881c28 ;
-text-decoration: none;
-}
-
-/* Hide checkbox (not visible, but used for toggling) */
-.menu-toggle {
-  display: none;
-}
-
-/* The menu icon (☰) for opening */
-.menu-icon {
-  display: none;
-  font-size: 30px;
-  padding: 20px;
-  color: #881c28;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-/* Close button (✕) */
-.close-menu {
-  display: none;
-  font-size: 30px;
-  padding: 20px;
-  color: #881c28;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1002;
-}
-
-/* Slide menu base styles */
-.menulinks {
-  transition: transform 0.3s ease;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #ffeeee;
-  height: 100%;
-  width: 250px;
-  padding-top: 100px; /* for spacing under nav bar */
-  flex-direction: column;
-  align-items: center;
-  transform: translateX(100%); /* hidden initially on the right */
-  z-index: 1000;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
+  color: #881c28 ;
+  text-decoration: none;
   }
+  
 
-  .menulinks li {
-    margin: 20px 0;
-  }
-
-  /* Show the menu when checkbox is checked */
-  .menu-toggle:checked + .menu-icon + .menulinks {
-    transform: translateX(0); /* slide in */
-  }
-
-  /* Show close button when menu is open */
-  .menu-toggle:checked + .menu-icon + .menulinks + .close-menu {
-    display: block;
-  }
-}
-
-
-
-@media (max-width: 768px)
-{nav ul{ flex-direction: column;
-align-items: center;}
-}
-
-
-
-.hover-oval{ display: inline-block;
-padding: 8px 16px;
-text-decoration: none;
-color:none;
-transition: all 0.3s ease;
+/* Hover effect for menu items */
+.hover-oval {
+  padding: 5px 15px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  border-radius: 25px;
 }
 
 .hover-oval:hover {
-background-color: #dd979f;
-border: 2px solid #dd979f;
-border-radius: 999px;
+  background-color: #dd979f;
+  border: 2px solid #dd979f;
+}
+
+/* Slide-in menu (hidden by default on small screens) */
+.menu-slide {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #ffeeee;
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+  border-left: 2px solid #881c28;
+  padding-top: 80px;  /* Added padding for better spacing */
+}
+
+.menu-slide ul {
+  padding: 20px;
+  text-align: left;
+}
+
+.menu-slide ul li {
+  margin: 20px 0;
+}
+
+.menu-slide a {
+  color: #881c28;
+  text-decoration: none;
+}
+
+/* Hidden checkbox for toggling menu visibility */
+.menu-toggle-checkbox {
+  display: none;  /* Hide the checkbox */
+}
+
+.menu-toggle {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #881c28;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 10000;
+  display: none;  /* Hide on desktop */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;  /* Hide horizontal menu on small screens */
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger menu button on small screens */
+  }
+
+  /* Show the slide-in menu when the checkbox is checked */
+  .menu-toggle-checkbox:checked + .menu-toggle + .menu-slide {
+    right: 0;  /* Display the menu when the checkbox is checked */
+  }
 }
 
 .hero .h3{
