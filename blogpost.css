@@ -2,10 +2,11 @@ html {
     color: #252525;
 }
 main {
+    margin-top: 60px;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%, 0);
-	max-width: 1280px;
+	max-width: 800px;
 	padding: 0 18px;
 	box-sizing: border-box;
 	display: flex;
@@ -53,7 +54,6 @@ section p {
 	font-size: 16px;
 }
 .background-img {
-	background-image: url(/);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
