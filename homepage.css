@@ -1,11 +1,11 @@
 body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-size: cover;
     height: 100vh;
-    background-image: url("/images/BackgroundIMG3.jpeg");
+    background-image: url("/images/BackgroundIMG2.jpeg");
     }
 
 .hero{
-      font-size: 72px;
+      font-size: 100px;
       font-weight: 400;
       font-family: 'Playfair Display', serif;
       text-align: center;
@@ -28,6 +28,7 @@ section {
   padding: 40px 20px;
   color: #5c2a3c;
   font-family: 'Georgia', serif;
+  font-size: 50px;
 }
 
 /* Main container for the About Me section */
@@ -38,6 +39,7 @@ section {
   max-width: 1000px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
 }
 
 /* Section title styling */
