@@ -88,7 +88,7 @@ transition: all ease 0.3s;
 color:rgb(157, 145, 145);
 font-size: 0.9rem;
 display: -webkit-box;
--webkit-line-clamp: 3;
+/* -wbkit-line-clamp: 3; */
 -webkit-box-orient:vertical;
 overflow: hidden;
 text-overflow: ellipsis;
