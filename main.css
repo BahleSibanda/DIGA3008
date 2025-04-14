@@ -2,7 +2,7 @@ nav{
  background-color:#ffeeee;
  height: auto;
  width: 100%;
- position: sticky;
+ position: fixed;
  top: 0;
  z-index: 1000;
 }
@@ -33,8 +33,6 @@ text-align: center;
   text-decoration: none;
   }
   
-
-/* Hover effect for menu items */
 .hover-oval {
   padding: 5px 15px;
   transition: background-color 0.3s ease, border 0.3s ease;
@@ -46,7 +44,6 @@ text-align: center;
   border: 2px solid #dd979f;
 }
 
-/* Slide-in menu (hidden by default on small screens) */
 .menu-slide {
   position: fixed;
   top: 0;
@@ -57,7 +54,7 @@ text-align: center;
   transition: right 0.3s ease-in-out;
   z-index: 9999;
   border-left: 2px solid #881c28;
-  padding-top: 80px;  /* Added padding for better spacing */
+  padding-top: 80px; 
 }
 
 .menu-slide ul {
@@ -74,9 +71,8 @@ text-align: center;
   text-decoration: none;
 }
 
-/* Hidden checkbox for toggling menu visibility */
 .menu-toggle-checkbox {
-  display: none;  /* Hide the checkbox */
+  display: none; 
 }
 
 .menu-toggle {
@@ -88,22 +84,21 @@ text-align: center;
   top: 25px;
   left: 25px;
   z-index: 10000;
-  display: none;  /* Hide on desktop */
-}
+  display: none;  }
 
-/* Media Query for smaller screens */
+
 @media (max-width: 768px) {
   nav ul {
-    display: none;  /* Hide horizontal menu on small screens */
+    display: none;  
   }
 
   .menu-toggle {
-    display: block; /* Show the hamburger menu button on small screens */
+    display: block; 
   }
 
-  /* Show the slide-in menu when the checkbox is checked */
+ 
   .menu-toggle-checkbox:checked + .menu-toggle + .menu-slide {
-    right: 0;  /* Display the menu when the checkbox is checked */
+    right: 0; 
   }
 }
 
