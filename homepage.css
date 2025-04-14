@@ -1,7 +1,7 @@
 body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-size: cover;
     height: 100vh;
-    background-image: url("/images/Aboutme.jpg");
+    background-image: url("/images/BackgroundIMG2.jpeg");
     }
 
 .hero{
@@ -25,13 +25,13 @@ section {
 
 .introduction {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 40px;
   color: #5c2a3c;
   font-family: 'Georgia', serif;
-  font-size: 50px;
-  font-size: 1rem;
+  font-size: 30px;
   max-width: 90%;
   margin: 0 auto;
+  margin-top: auto;
 }
 
 .content-section {
