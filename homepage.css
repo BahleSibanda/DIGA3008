@@ -2,11 +2,14 @@ body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-size: cover;
     height: 50vh;
     background-image: url("./images/backgroundimage4.jpeg");
+    background-position: center;
+    margin: 0;
+    padding: 0;
     }
 
 .hero{
-      margin-top: 50px;
-      font-size: 120px;
+      margin-top: 160px;
+      font-size: 8vw;
       font-weight: 400;
       font-family: 'Playfair Display', serif;
       text-align: center;
@@ -20,30 +23,19 @@ body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       
 
 section {
-  margin-bottom: 350px;
+  margin-bottom: 100px;
+  margin-right: 5px;
 }
 
-
-/* .introduction {
-  text-align: center;
-  padding: 20px 40px;
-  color: #000000;
-  font-family: 'Georgia', serif;
-  font-size: 50px;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-top: auto;
-} */
-
 .content-section {
-  background-color: rgb(101, 34, 34);
-  padding: 40px 20px;
+  background-color: rgba(101, 34, 34, 0);
+  padding: 20px 15px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 90%;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   /* padding-top: 50px; */
-  margin-bottom: 100px;
+  margin-bottom: 15px;
 }
 
 
@@ -51,20 +43,20 @@ section {
   text-align: center;
   font-size: 2.5rem;
   color: #fffefe;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: 'Georgia', serif;
 }
 
 .about-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
-  padding: 5px;
+  gap: 15px;
+  padding: 0;
 
 }
 
@@ -90,4 +82,5 @@ section {
   font-family: 'Georgia', serif;
   line-height: 1.6;
   background-color: rgb(101, 34, 34);
+  padding: 0 10px;
 }
