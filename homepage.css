@@ -1,6 +1,6 @@
 body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
     background-image: url("./images/backgroundimage4.jpeg");
     }
 
@@ -20,7 +20,7 @@ body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       
 
 section {
-  margin-bottom: 250px;
+  margin-bottom: 350px;
 }
 
 
@@ -42,8 +42,8 @@ section {
   max-width: 600px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  padding-top: 50px;
-  /* margin-bottom: 1000px; */
+  /* padding-top: 50px; */
+  margin-bottom: 100px;
 }
 
 
