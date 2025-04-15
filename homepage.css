@@ -43,7 +43,7 @@ section {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   padding-top: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 1000px; */
 }
 
 
@@ -65,7 +65,7 @@ section {
   max-width: 800px;
   margin: 0 auto;
   padding: 5px;
-  margin-bottom: 80px;
+
 }
 
 .about-image img {
@@ -89,4 +89,5 @@ section {
   color: #ececec;
   font-family: 'Georgia', serif;
   line-height: 1.6;
+  background-color: rgb(101, 34, 34);
 }
