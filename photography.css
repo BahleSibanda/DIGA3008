@@ -1,0 +1,26 @@
+.gallery{ 
+display:inline-block
+border 5px solid rgb(100, 24, 24) ;
+margin: 5px
+}
+
+.gallery .description{
+padding: 10px;
+text-align: center;
+font-size: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #881c28;
+
+}
+
+.gallery:hover{
+border: 5px solid (100,24,24)
+
+}
+
+.gallery img{
+width: 500px;
+height: 600px;
+align-items: center;
+
+}
