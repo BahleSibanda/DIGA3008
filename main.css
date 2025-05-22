@@ -159,7 +159,7 @@ footer a:hover {
 
 /* Section Navigation Styles */
 .content-section {
-  display: none;
+  display: block;
   background-color: rgba(101, 34, 34, 0);
   padding: 20px 15px;
   margin: 0 auto;
