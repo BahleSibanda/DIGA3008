@@ -1,3 +1,4 @@
+/* Navigation Styles */
 nav { 
   background-color: #ffeeee;
   height: auto;
@@ -49,6 +50,11 @@ nav ul li {
   border: 2px solid #881c28;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
+/* Mobile Menu Styles */
 .menu-slide {
   position: fixed;
   top: 0;
@@ -100,7 +106,6 @@ nav ul li {
     display: none;  
   }
 
-
   .menu-toggle {
     display: block;
   }
@@ -110,54 +115,87 @@ nav ul li {
   }
 }
 
-
-.hero .h3{
-font-style: italic;
-
-
+/* Layout Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff1ee;
+}
 
+main {
+  flex: 1;
+  padding-top: 120px; /* Adjust based on your nav height */
+}
+
+/* Footer Styles */
 footer {
-    color: #000000;
-    padding: 2px 0;
-    text-align: center;
-  }
-  
-  .footer-content {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  
-  footer a {
-    color: #ccc;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer a:hover {
-    color: #fff;
-  }
+  color: #000000;
+  padding: 2px 0;
+  text-align: center;
+  margin-top: 10px;
+}
 
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff1ee;
-  }
-  
-  main {
-    flex: 1;
-  }
-  
-  footer {
-    margin-top: 10px;
-  }
+.footer-content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Section Navigation Styles */
+.content-section {
+  display: none;
+  background-color: rgba(101, 34, 34, 0);
+  padding: 20px 15px;
+  margin: 0 auto;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.content-section.active {
+  display: block;
+}
+
+#about-section {
+  scroll-margin-top: 100px;
+}
+
+/* Scroll Down Arrow */
+.scroll-down-arrow {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #881c28;
+  animation: bounce 2s infinite;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-20px);}
+  60% {transform: translateY(-10px);}
+}
+
+/* Typography */
+.hero .h3 {
+  font-style: italic;
+}
   
 
 
