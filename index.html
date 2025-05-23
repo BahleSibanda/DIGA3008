@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <meta name="author" content="Bahle Jacqueline Sibanda">
-    <link rel="stylesheet" href="./homepage.css">
-    <link rel="stylesheet" href="./navigation.css">
-    <link rel="stylesheet" href="./main.css">
-  
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -26,24 +25,31 @@
           <li><a href="#about-section" class="hover-oval nav-link">about</a></li>
         </ul>
       </div>
+      
+      <ul class="menulinks">
+        <li><a href="index.html" class="hover-oval active-link">home</a></li>
+        <li><a href="./blogs/blogs.html" class="hover-oval">blogs</a></li>
+        <li><a href="./portfolio/portfolio.html" class="hover-oval">portfolio</a></li>
+        <li><a href="./design/design.html" class="hover-oval">design</a></li>
+        <li><a href="#about-section" class="hover-oval nav-link">about</a></li>
+      </ul>
     </nav>
   </header>
 
   <main> 
-    <section class="hero active">
+    <section class="hero">
       <div class="oval-text">Bahle's Biblioteca</div>
-      
-      <a href="about-section" class="scroll-down-button">
-     
-     </a>
+      <a href="#about-section" class="scroll-down-button">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </section>
 
-    <section id="about-section" class="scroll-down-button">
+    <section id="about-section" class="content-section">
       <h2 class="section-title">About Me</h2>
       
       <div class="about-container">
         <div class="about-image">
-          <img src="./images/Aboutme.jpg" alt="Jackie Image">
+          <img src="./images/Aboutme.jpg" alt="Bahle Jacqueline Sibanda">
         </div>
 
         <div class="about-text">
@@ -57,14 +63,15 @@
   <footer>
     &copy; Bahle's Biblioteca
     <div>
-      <a href="links" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="links" target="_blank" aria-label="LinkedIn">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
   </footer>
 
+  <script src="./js/navigation.js"></script>
 </body>
 </html>
