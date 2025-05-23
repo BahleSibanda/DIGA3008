@@ -5,20 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>essays</title>
     
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/photography.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../photography.css">
+    <link rel="stylesheet" href="../navigation.css">
+</head>
 
-     <header>
-        <nav class="menu">
-            <ul class="menulinks">
-                <li><a href="../index.html" class="hover-oval">home</a></li>
+<body>
+    <header>
+    <nav>
+       <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+      <label for="menu-toggle" class="menu-toggle">☰</label>
+      <div class="menu-slide">
+            <ul>
+              <li><a href="../index.html" class="hover-oval">home</a></li>
+              <li><a href="../blogs/blogs.html" class="hover-oval">blogs</a></li>
+              <li><a href="../portfolio/portfolio.html" class="hover-oval active-link">portfolio</a></li>
+              <li><a href="../design/design.html" class="hover-oval">design</a></li>
+              <li><a href="../index.html#about-section" class="hover-oval nav-link">about</a></li>
+            </ul>
+            </div>
+             <ul class="menulinks">
+                <li><a href="/index.html" class="hover-oval">home</a></li>
                 <li><a href="/blogs/blogs.html" class="hover-oval">blog</a></li>
                 <li><a href="/portfolio/portfolio.html" class="hover-oval">portfolio</a></li>
                 <li><a href="/design/design.html" class="hover-oval">design</a></li>
+                <li><a href="/index.html#about-section" class="hover-oval nav-link">about</a></li>
             </ul>  
-        </nav>
+    </nav>
     </header>
-</head>
+     
 <main>
   <section class="gallery" unique-script-id="w-w-dm-id">
     <div class="responsive-container-block bigContainer">
@@ -62,3 +77,4 @@
     </div>
   </section>
 </main>
+</body>
