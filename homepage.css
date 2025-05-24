@@ -79,6 +79,22 @@
   animation: bounce 2s infinite;
 }
 
+/* Smooth transition for the oval text */
+.oval-text {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Changes cursor to indicate it's clickable */
+}
+
+/* Add a subtle animation when the text changes */
+@keyframes textFade {
+  0% { opacity: 0.5; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.oval-text.changing {
+  animation: textFade 0.3s ease-in-out;
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
   40% { transform: translateY(-10px); }
