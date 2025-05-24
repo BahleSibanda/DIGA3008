@@ -186,6 +186,21 @@
   filter: brightness(0.85); 
 }
 
+
+.art-heading h3{
+  font-size: 40px;
+  color:#881c28 ;
+  margin-top: 150px;
+  }
+
+.photography-heading h3{
+  font-size: 40px;
+  color:#881c28 ;
+  margin-top: 150px;
+  }
+
+
+
 @media (max-width: 768px) {
   .gallery .project {
     width: 50%;
