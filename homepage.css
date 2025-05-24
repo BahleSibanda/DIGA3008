@@ -81,18 +81,23 @@
 
 /* Smooth transition for the oval text */
 .oval-text {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
   cursor: pointer; /* Changes cursor to indicate it's clickable */
-}
-
-/* Add a subtle animation when the text changes */
-@keyframes textFade {
-  0% { opacity: 0.5; transform: scale(0.95); }
-  100% { opacity: 1; transform: scale(1); }
 }
 
 .oval-text.changing {
   animation: textFade 0.3s ease-in-out;
+}
+
+.oval-text:hover {
+transform: scale(1.02);
+opacity: 0.9;
+}
+
+/* Add a subtle animation when the text changes */
+@keyframes textFade {
+  0% { opacity: 0.8; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 @keyframes bounce {
