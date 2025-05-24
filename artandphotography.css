@@ -180,6 +180,12 @@
   border-width: 10cm;
 }
 
+.gallery .project:hover .smallImage {
+  opacity: 0.5;
+  transform: scale(1.05);
+  filter: brightness(0.85); 
+}
+
 @media (max-width: 768px) {
   .gallery .project {
     width: 50%;
