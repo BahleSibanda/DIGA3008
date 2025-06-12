@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  min-height: 100vh; /* Crucial for footer positioning */
+  min-height: 100vh; 
   display: flex;
-  flex-direction: column; /* Makes footer stick to bottom */
+  flex-direction: column;
 }
 
 .blogs {
@@ -13,7 +13,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  flex: 1; /* Allows main content to grow and push footer down */
+  flex: 1; 
 }
 
 .blog-heading{
@@ -32,14 +32,12 @@ margin-top: 100px;
 .blog-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Changed from center to prevent vertical squeezing */
+  align-items: flex-start; 
   margin: 20px 0px;
   flex-wrap: wrap;
   border-radius: 20px;
-  /* Removed fixed height: 70vh */
-  /* Removed align-content: stretch (not needed) */
-  width: 100%; /* Ensures full width */
-  gap: 20px; /* Better than margin for grid items */
+  width: 100%; 
+  gap: 20px; 
  padding: 50;
 }
 
@@ -50,9 +48,9 @@ margin-top: 100px;
   border-radius: 20px;
   overflow: hidden;
   height:50vh;
-  min-height: 500px; /* Optional: Set minimum height instead of fixed */
+  min-height: 500px; 
   display: flex;
-  flex-direction: column; /* Makes content flow naturally */
+  flex-direction: column; 
 }
 
 .blog-image{
