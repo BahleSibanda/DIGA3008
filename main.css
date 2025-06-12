@@ -164,16 +164,25 @@ footer {
   
   footer {
     margin-top: 10px;
+    padding: 40px 0;
+    background-color: #881c28;
   }
 
   html { 
   scroll-behavior: smooth;
   }
-  
-  
+ #back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
 
-
-
-
-    
-
+#back-to-top.show {
+    display: block;
+}

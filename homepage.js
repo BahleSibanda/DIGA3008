@@ -46,50 +46,61 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-    // Particle effect script
-    document.addEventListener('DOMContentLoaded', function() {
+
+document.addEventListener('DOMContentLoaded', function() {
+    const initParticles = function() {
         const container = document.getElementById('particles-container');
         const aboutSection = document.getElementById('about-section');
         
-        // Create particles
-        function createParticles() {
-            const particleCount = 30;
-            const sectionHeight = aboutSection.offsetHeight;
-            const sectionWidth = aboutSection.offsetWidth;
+        if (!container || !aboutSection) return;
+
+        // Clear existing particles
+        container.innerHTML = '';
+
+        // Use viewport dimensions
+        const width = window.innerWidth;
+        const height = aboutSection.offsetHeight;
+        const particleCount = Math.min(100, Math.floor(width * height / 2000));
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
             
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // Random properties for each particle
-                const size = Math.random() * 10 + 5;
-                const posX = Math.random() * sectionWidth;
-                const posY = Math.random() * sectionHeight;
-                const duration = Math.random() * 20 + 10;
-                const delay = Math.random() * 5;
-                const redShade = Math.floor(Math.random() * 100 + 155);
-                const opacity = Math.random() * 0.5 + 0.3;
-                
-                // Apply styles
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                particle.style.left = `${posX}px`;
-                particle.style.top = `${posY}px`;
-                particle.style.animationDuration = `${duration}s`;
-                particle.style.animationDelay = `${delay}s`;
-                particle.style.backgroundColor = `rgb(${redShade}, ${Math.floor(redShade*0.3)}, ${Math.floor(redShade*0.3)})`;
-                particle.style.opacity = opacity;
-                
-                container.appendChild(particle);
-            }
+            // Random properties
+            const size = Math.random() * 8 + 4;
+            const posX = Math.random() * width;
+            const duration = Math.random() * 15 + 10;
+            const delay = Math.random() * 10;
+            const redShade = Math.floor(Math.random() * 100 + 155);
+            
+            particle.style.cssText = `
+                width: ${size}px;
+                height: ${size}px;
+                left: ${posX}px;
+                top: ${height}px;
+                animation-duration: ${duration}s;
+                animation-delay: ${delay}s;
+                background-color: rgb(${redShade}, ${Math.floor(redShade*0.3)}, ${Math.floor(redShade*0.3)});
+            `;
+            
+            container.appendChild(particle);
         }
-        
-        // Initialize particles
-        createParticles();
-        
-        // Recreate particles on resize
-        window.addEventListener('resize', function() {
-            container.innerHTML = '';
-            createParticles();
-        });
+    };
+
+    // Initialize on scroll
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            initParticles();
+        }
+    }, { threshold: 0.1 });
+
+    const aboutSection = document.getElementById('about-section');
+    if (aboutSection) observer.observe(aboutSection);
+
+    // Handle resize
+    window.addEventListener('resize', function() {
+        if (document.getElementById('particles-container').children.length > 0) {
+            initParticles();
+        }
     });
+});

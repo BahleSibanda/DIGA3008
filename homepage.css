@@ -27,6 +27,7 @@
   padding: 100px 50;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .section-title {
@@ -122,37 +123,49 @@ opacity: 0.9;
   }
 }
 
-/* Particle styles */
-        #particles-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        .particle {
-            position: absolute;
-            background: maroon;
-            border-radius: 50%;
-            opacity: 0.7;
-            animation: float linear infinite;
-        }
-        
-        @keyframes float {
-            0% {
-                transform: translateY(0) rotate(0deg);
-            }
-            100% {
-                transform: translateY(-100vh) rotate(360deg);
-            }
-        }
-        
-        /* Ensure about section content stays above particles */
-        .about-container {
-            position: relative;
-            z-index: 2;
-        }
+/* Particles */
+#particles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;  /* Adjust as needed */
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: peachpuff;
+    opacity: 0.6;
+    animation: float linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* About section positioning */
+#about-section {
+    position: relative;  /* Creates stacking context */
+}
+
+.about-container {
+    position: relative;
+    z-index: 2;  /* Above particles */
+}

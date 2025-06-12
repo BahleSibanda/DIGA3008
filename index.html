@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./homepage.css">
     <link rel="stylesheet" href="./navigation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="../navigation.js"></script>
 </head>
 
 <body>
@@ -67,55 +69,6 @@
 
   <script src="./js/navigation.js"></script>
   <script src="./homepage.js"></script>
-  
-  <script>
-    // Particle effect script
-    document.addEventListener('DOMContentLoaded', function() {
-        const container = document.getElementById('particles-container');
-        const aboutSection = document.getElementById('about-section');
-        
-        // Create particles
-        function createParticles() {
-            const particleCount = 30;
-            const sectionHeight = aboutSection.offsetHeight;
-            const sectionWidth = aboutSection.offsetWidth;
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // Random properties for each particle
-                const size = Math.random() * 10 + 5;
-                const posX = Math.random() * sectionWidth;
-                const posY = Math.random() * sectionHeight;
-                const duration = Math.random() * 20 + 10;
-                const delay = Math.random() * 5;
-                const redShade = Math.floor(Math.random() * 100 + 155);
-                const opacity = Math.random() * 0.5 + 0.3;
-                
-                // Apply styles
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                particle.style.left = `${posX}px`;
-                particle.style.top = `${posY}px`;
-                particle.style.animationDuration = `${duration}s`;
-                particle.style.animationDelay = `${delay}s`;
-                particle.style.backgroundColor = `rgb(${redShade}, ${Math.floor(redShade*0.3)}, ${Math.floor(redShade*0.3)})`;
-                particle.style.opacity = opacity;
-                
-                container.appendChild(particle);
-            }
-        }
-        
-        // Initialize particles
-        createParticles();
-        
-        // Recreate particles on resize
-        window.addEventListener('resize', function() {
-            container.innerHTML = '';
-            createParticles();
-        });
-    });
-  </script>
+
 </body>
 </html>
