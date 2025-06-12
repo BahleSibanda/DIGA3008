@@ -169,3 +169,46 @@ opacity: 0.9;
     position: relative;
     z-index: 2;  /* Above particles */
 }
+
+/* Quotes Section */
+#quotes-section {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  text-align: center;
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#random-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#quote-author {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #555;
+}
+
+#new-quote-btn {
+  padding: 0.5rem 1.5rem;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#new-quote-btn:hover {
+  background-color: #3a5a80;
+}

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script src="../navigation.js"></script>
+
+    <!-- //has footer js function -->
+    <script src="./javascripts/main.js"></script> 
 </head>
 
 <body>
@@ -61,14 +64,27 @@
         </div>
       </div>
     </section>
-  </main>
 
+    <section id="quotes-section" class="content-section">
+  <h2 class="section-title">Lana Del Rey quote of the day</h2>
+  <div class="quote-container">
+    <blockquote id="random-quote">
+      <p>Loading quote...</p>
+      <footer id="quote-author"></footer>
+    </blockquote>
+    <button id="new-quote-btn" class="hover-oval">New Quote</button>
+  </div>
+</section>
+
+  </main>
+<!-- 
   <footer>
     &copy; Bahle's Biblioteca 2025. All rights reserved.
-  </footer>
+  </footer> -->
 
   <script src="./js/navigation.js"></script>
   <script src="./homepage.js"></script>
+  <script src="./javascripts/quotes-api.js"></script>
 
 </body>
 </html>

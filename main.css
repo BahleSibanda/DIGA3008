@@ -113,17 +113,20 @@ nav ul li {
 
 .hero .h3{
 font-style: italic;
-
-
 }
 
 
-footer {
-    color: #000000;
-    padding: 2px 0;
-    text-align: center;
-  }
   
+   footer {
+    margin-top: auto;
+    padding: 40px 20px 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    background-color: #881c28;
+    width: 100%;
+  }
+
   .footer-content {
     max-width: 500px;
     margin: 0 auto;
@@ -135,14 +138,27 @@ footer {
     text-decoration: none;
     margin: 0 10px;
   }
-  
+ 
   footer a:hover {
     color: #fff;
   }
 
+#footer-container{
+  flex: shrink 0;
+  width: 100%;
+}
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
   html, body {
     height: 100%;
     margin: 0;
+    padding: 0%;
   }
   
   body {
@@ -158,15 +174,12 @@ footer {
   }
   
   main {
-    flex: 1;
-    padding-top: 80px;;
+    flex: 1 0 auto;
+    padding-top: 80px;
+    width: 100%;
   }
   
-  footer {
-    margin-top: 10px;
-    padding: 40px 0;
-    background-color: #881c28;
-  }
+
 
   html { 
   scroll-behavior: smooth;
