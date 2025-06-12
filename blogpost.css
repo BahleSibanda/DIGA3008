@@ -95,6 +95,22 @@ p, h1, h2, h3, li {
     content: " →";
 }
 
+.background-img {
+    width: 100%; 
+    overflow: hidden; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.background-img img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
 @media (max-width: 768px) {
     .blog-navigation {
         width: 95%;
