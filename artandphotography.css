@@ -14,6 +14,18 @@
   margin-left: auto;
   justify-content: flex-start;
 }
+.art-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.art-heading h3 {
+  font-size: 40px;
+  color: #881c28;
+  margin-top: 100px;
+}
 
 .gallery .responsive-container-block.bigContainer {
   padding-top: 10px;
@@ -199,6 +211,54 @@
   margin-top: 150px;
   }
 
+.project {
+  position: relative;
+  width: 33%;
+  padding: 10px;
+  perspective: 1000px; /* Add perspective to make the flip effect 3D */
+}
+
+.project .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.project.flipped .image-container {
+  transform: rotateY(180deg); /* Flip the image */
+}
+
+.project .image-block, 
+.project .description {
+  backface-visibility: hidden; /* Hide the backface when flipped */
+}
+
+.project .image-block {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg); /* Ensure the description is flipped initially */
+}
 
 
 @media (max-width: 768px) {
