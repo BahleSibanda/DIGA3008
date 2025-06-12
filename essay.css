@@ -35,6 +35,7 @@ body{
     flex-wrap:wrap;
     align-content: stretch;
     height: 70vh;
+    padding-bottom: 5rem;
     }
     
     .essay-box{

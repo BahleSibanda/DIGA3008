@@ -2,7 +2,7 @@
   min-height: 75px;
   height: fit-content;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -21,14 +21,16 @@
   flex-direction: column;
 }
 
-.art-heading h3 {
-  font-size: 40px;
-  color: #881c28;
-  margin-top: 100px;
-}
+
+.art-heading h3{
+  font-size: 50px;
+  color:#881c28 ;
+  margin-top: 60px;
+  
+  }
 
 .gallery .responsive-container-block.bigContainer {
-  padding-top: 10px;
+  padding-top: 0px;
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
@@ -40,7 +42,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  margin-top: 50px;
+  
   margin-right: auto;
   margin-bottom: 50px;
   margin-left: auto;
@@ -67,14 +69,14 @@
   left: 0px;
   z-index: 100;
   display: none;
-  padding-top: 20px;
+  
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
 }
 
 .gallery .overlay-inner {
-  top: 50%;
+  
   right: 0px;
   bottom: 0px;
   left: 50%;
@@ -90,7 +92,7 @@
   background-clip: initial;
   background-color: white;
   width: fit-content;
-  padding-top: 35px;
+ 
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -162,7 +164,7 @@
 .gallery .project {
   position: relative;
   width: 33%;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -199,16 +201,12 @@
 }
 
 
-.art-heading h3{
-  font-size: 40px;
-  color:#881c28 ;
-  margin-top: 150px;
-  }
+
 
 .photography-heading h3{
-  font-size: 40px;
+  font-size: 60px;
   color:#881c28 ;
-  margin-top: 150px;
+  margin-top: 80px;
   }
 
 .project {

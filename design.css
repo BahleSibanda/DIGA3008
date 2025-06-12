@@ -44,8 +44,22 @@
     margin-bottom: 1rem;
     font-size: 1.4rem;
     color: #111;
+    align-items: center;
   }
+    .design-heading{
+    
+    justify-content: center;
+    align-items: center;
   
+    }
+
+
+.design-heading h2{
+  font-size: 40px;
+  color:#881c28 ;
+  margin-top:50px;
+  text-align: center;
+  }
 
   section p {
     margin-bottom: 1rem;
