@@ -6,9 +6,7 @@ html, body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;  /* Prevents horizontal overflow */
-  width: 100%;
 }
-
 
 .blogs {
   display: flex;

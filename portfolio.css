@@ -1,8 +1,4 @@
 
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
 body{
   margin: 0px;
   padding: 0px;
@@ -35,18 +31,18 @@ body{
 }
 .portfolio-section {
   scroll-snap-align: start;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px;
+  padding: 0px;
   margin: 0;
 }
 
 .portfolio-box {
   width: 90%;
   max-width: 900px;
-  height: 80vh;
+  height: 70vh;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 12px 24px rgba(38, 32, 32, 0.15);
