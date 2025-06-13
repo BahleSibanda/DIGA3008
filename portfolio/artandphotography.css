@@ -78,7 +78,7 @@ html, body {
   font-size: 50px;
   color:#ffffff;
   margin-top: 60px;
-  /* font-family: 'Georgia', serif; */
+   font-family: 'Playfair Display', serif;
   }
 
 .gallery .responsive-container-block.bigContainer {
@@ -340,4 +340,19 @@ html, body {
   .gallery .overlay-inner {
     max-width: 90%;
   }
+}
+
+.photography-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  width: 100%;
+  background-color: #881c28;    
+
+  padding: 0rem 0;
+  text-align: center;
+  margin: 1rem 0;
+
 }

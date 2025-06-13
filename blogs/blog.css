@@ -17,31 +17,25 @@ html, body {
   flex: 1;
 }
 
-.blog-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%; 
-  background-color: #881c28;    
-  padding: 4rem 0; 
-  text-align: center;
-  margin: 4rem 0 2rem 0;
-  position: relative;
-  left: 0;
-  right: 0;
+.blog-heading{
+  padding-top: 8rem;
 }
 .blogs {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 .blog-heading h3 {
+  padding-top: 10rem;
   font-size: 3rem; 
-  color: #ffffff;
+  color: #ffffff; 
   margin: 0; 
-  padding: 0rem 1rem;
+  padding: 1rem 2rem; 
+  font-family: 'Playfair Display', serif;
+  border: 3px solid #ffffff;
+  border-radius: 10px; 
+  background-color: #881c28;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
-
 .blog-container {
   display: flex;
   justify-content: center;

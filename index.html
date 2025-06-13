@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./main styles/main.css">
     <link rel="stylesheet" href="./main styles/homepage.css">
     <link rel="stylesheet" href="./main styles/navigation.css">
+    <link rel="stylesheet" href="./poemAPI/poem.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../navigation.js"></script>
     <!-- //has footer js function -->
     
     <link rel = "icon" href = "./images/logo.jpg" type = "image/x-icon">
     <script src="./javascripts/main.js"></script> 
+    <script src="./javascripts/poem-api.js"></script>
 
     <title>Homepage</title>
 </head>
@@ -67,14 +69,12 @@
       </section>
     </section>
 
-    <section id="quotes-section" class="content-section">
-  <h2 class="section-title">Lana Del Rey quote of the day</h2>
-  <section class="quote-container">
-    <blockquote id="random-quote">
-      <p>Loading quote...</p>
-      <footer id="quote-author"></footer>
-    </blockquote>
-    <button id="new-quote-btn" class="hover-oval">New Quote</button>
+  <section id="poem-link-section" class="content-section">
+    <h2 class="section-title">Daily Inspiration</h2>
+    <p>Discover today's featured poem</p>
+     <a href="./poem.html" class="poem-link-button">Read Poem of the Day</a>
+  </section>
+    
   </section>
 </section>
 <button id="back-to-top" class="back-to-top" title="Go to top">

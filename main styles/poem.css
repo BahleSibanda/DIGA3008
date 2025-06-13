@@ -1,0 +1,47 @@
+#poem-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.poem-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(136, 28, 40, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poem-title {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #881c28;
+}
+
+.poem-author {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #b7505c;
+}
+
+.poem-lines p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.poem-button {
+    background-color: #881c28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.poem-button:hover {
+    background-color: #6a1520;
+}

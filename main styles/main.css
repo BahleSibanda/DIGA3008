@@ -215,3 +215,55 @@ font-style: italic;
   scroll-behavior: smooth;
   }
 
+
+.poem-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.poem-title {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.poem-author {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.poem-lines p {
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.poem-lines p:empty {
+    height: 1em;
+}
+
+#poem-link-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.poem-link-button {
+    display: inline-block;
+    background-color: #881c28;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.poem-link-button:hover {
+    background-color: #6a1520;
+}
