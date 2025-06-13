@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bahle Jacqueline Sibanda">
->   <link rel="stylesheet" href="../main styles/poem.css">
-    <script src="../javascripts/poem-api.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-      <link rel="icon" href="../images/logo.jpg" type="image/x-icon">
-   <script src="../javascripts/poem-api.js"></script>
+    <link rel="stylesheet" href="main styles/main.css">
+    <link rel="stylesheet" href="main styles/poem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
     <title>Poem of the Day</title>
 </head>
 <body>
@@ -18,20 +17,20 @@
       <label for="menu-toggle" class="menu-toggle">☰</label>
       <section class="menu-slide">
         <ul>
-          <li><a href="../index.html" class="hover-oval">home</a></li>
-          <li><a href="../blogs/blogs.html" class="hover-oval">blogs</a></li>
-          <li><a href="../portfolio/portfolio.html" class="hover-oval">portfolio</a></li>
-          <li><a href="../design/design.html" class="hover-oval">design</a></li>
-          <li><a href="../index.html#about-section" class="hover-oval nav-link">about</a></li>
+          <li><a href="index.html" class="hover-oval">home</a></li>
+          <li><a href="./blogs/blogs.html" class="hover-oval">blogs</a></li>
+          <li><a href="./portfolio/portfolio.html" class="hover-oval">portfolio</a></li>
+          <li><a href="./design/design.html" class="hover-oval">design</a></li>
+          <li><a href="index.html#about-section" class="hover-oval nav-link">about</a></li>
         </ul>
       </section>
       
       <ul class="menulinks">
-        <li><a href="../index.html" class="hover-oval">home</a></li>
-        <li><a href="../blogs/blogs.html" class="hover-oval">blogs</a></li>
-        <li><a href="../portfolio/portfolio.html" class="hover-oval">portfolio</a></li>
-        <li><a href="../design/design.html" class="hover-oval">design</a></li>
-        <li><a href="../index.html#about-section" class="hover-oval nav-link">about</a></li>
+        <li><a href="index.html" class="hover-oval">home</a></li>
+        <li><a href="blogs/blogs.html" class="hover-oval">blogs</a></li>
+        <li><a href="portfolio/portfolio.html" class="hover-oval">portfolio</a></li>
+        <li><a href="design/design.html" class="hover-oval">design</a></li>
+        <li><a href="index.html#about-section" class="hover-oval nav-link">about</a></li>
       </ul>
     </nav>
   </header>
@@ -44,11 +43,50 @@
     </section>
   </main>
 
+  <script src="javascripts/poem-api.js"></script>
   <script>
-    document.getElementById('new-poem-btn').addEventListener('click', function() {
-      localStorage.removeItem('lastPoemFetchDate');
-      fetchDailyPoem();
+    // Debug check
+    console.log("Poem API functions available:", {
+      fetchDailyPoem: typeof fetchDailyPoem,
+      shouldFetchNewPoem: typeof shouldFetchNewPoem,
+      displaySavedPoem: typeof displaySavedPoem
     });
+
+    // Initialize when ready
+    function initPoemPage() {
+      // Button click handler
+      document.getElementById('new-poem-btn').addEventListener('click', function() {
+        console.log("Fetching new poem...");
+        try {
+          localStorage.removeItem('lastPoemFetchDate');
+          fetchDailyPoem();
+        } catch (error) {
+          console.error("Failed to fetch poem:", error);
+          alert("Failed to load poem. Please try again later.");
+        }
+      });
+
+      // Load initial poem
+      try {
+        if (shouldFetchNewPoem()) {
+          fetchDailyPoem();
+        } else {
+          displaySavedPoem();
+        }
+      } catch (error) {
+        console.error("Failed to load initial poem:", error);
+        document.querySelector('.poem-container').innerHTML = `
+          <p class="poem-error">Couldn't load poem. Please refresh the page.</p>
+        `;
+      }
+    }
+
+    // Start initialization
+    if (document.readyState === 'complete') {
+      initPoemPage();
+    } else {
+      document.addEventListener('DOMContentLoaded', initPoemPage);
+    }
   </script>
 </body>
 </html>
