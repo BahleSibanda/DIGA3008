@@ -46,18 +46,26 @@
     color: #111;
     align-items: center;
   }
-    .design-heading{
-    
-    justify-content: center;
-    align-items: center;
+  .design-heading {
+ 
+  justify-content: center;
+  align-items: center;
+ 
   
-    }
+  width: 100%;
+  background-color: #881c28;    
+
+  padding: 0rem 0;
+  text-align: center;
+  margin: 1rem 0;
+
+}
 
 
 .design-heading h2{
   font-size: 40px;
-  color:#881c28 ;
-  margin-top:50px;
+  color:#ffffff ;
+  margin-top:100px;
   text-align: center;
   }
 
