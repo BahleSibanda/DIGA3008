@@ -4,20 +4,30 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
-  .portfolio-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column ;
-    }
-
-
-.portfolio-heading h3{
-  font-size: 40px;
-  color:#881c28 ;
-  margin-top:60px;
-  }
-
+ .portfolio-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; 
+  background-color: #881c28;    
+  padding: 4rem 0; 
+  text-align: center;
+  margin: 1.5rem 0 2rem 0;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.portfolio {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.portfolio-heading h3 {
+  font-size: 3rem; 
+  color: #ffffff;
+  margin: 0; 
+  padding: 0rem 1rem;
+}
 .portfolio-section {
   scroll-snap-align: start;
   min-height: 100vh;
