@@ -42,11 +42,12 @@ body{
 .portfolio-box {
   width: 90%;
   max-width: 900px;
-  height: 70vh;
+  height: 60vh;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 12px 24px rgba(38, 32, 32, 0.15);
   background-color: #ffc6c6;
+
 
   display: flex;
   flex-direction: column;
