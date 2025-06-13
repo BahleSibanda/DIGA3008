@@ -1,4 +1,8 @@
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 body {
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.6;
