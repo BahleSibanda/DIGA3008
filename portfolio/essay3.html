@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Bahle Jacqueline Sibanda" />
+  <meta name="description" content="Personal reflections on website development journey." />
+  <link rel="stylesheet" href="../main styles/main.css">
+  <link rel="stylesheet" href="../main styles/navigation.css">
+  <link rel="stylesheet" href="../blogs/blogpost.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="../images/logo.jpg" type="image/x-icon">
+  <script src="../javascripts/main.js"></script>
+  <title>Reflections on My Website</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+      <label for="menu-toggle" class="menu-toggle">☰</label>
+      <section class="menu-slide">
+        <ul>
+          <li><a href="../index.html" class="hover-oval">home</a></li>
+          <li><a href="../blogs/blogs.html" class="hover-oval">blogs</a></li>
+          <li><a href="../portfolio/portfolio.html" class="hover-oval active-link">portfolio</a></li>
+          <li><a href="../design/design.html" class="hover-oval">design</a></li>
+          <li><a href="../index.html#about-section" class="hover-oval nav-link">about</a></li>
+        </ul>
+      </section>
+      <ul class="menulinks">
+        <li><a href="../index.html" class="hover-oval">home</a></li>
+        <li><a href="../blogs/blogs.html" class="hover-oval">blogs</a></li>
+        <li><a href="../portfolio/portfolio.html" class="hover-oval active-link">portfolio</a></li>
+        <li><a href="../design/design.html" class="hover-oval">design</a></li>
+        <li><a href="../index.html#about-section" class="hover-oval nav-link">about</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main> 
+    <section class="blog-container">
+      <h1>REFLECTIONS ON MY WEBSITE</h1>
+      <p class="intro">
+        by <a href="../index.html">Bahle Jacqueline (Jackie) Sibanda</a>
+      </p>
+      
+      <article>
+        <p>
+          When I first began creating my website, I encountered numerous challenges that tested my patience and problem-solving skills. The folder structure proved particularly difficult for me to organize effectively. I remember spending hours trying to figure out why certain files wouldn't load properly, only to realize my linking paths were inconsistent. Sometimes I used "./" when I should have used "../", and other times I mixed up folder names like "main styles" and "poemAPI". These frustrations taught me the importance of maintaining a clear and consistent file structure from the very beginning of a project. Through repeated trial and error, I gradually developed a better system that made navigation and linking much more reliable.
+        </p>
+        
+        <p>
+          HTML markup was another area where I faced initial confusion. At the start, I didn't fully understand the purpose of semantic elements. I would often use generic div tags when more specific elements like section, article or header would have been more appropriate. However, as I continued working, something clicked. I began to appreciate how semantic HTML not only makes the code more readable but also improves accessibility for users with screen readers. What once seemed complicated became straightforward, and I found myself naturally reaching for the proper semantic tags as I built out my pages.
+        </p>
+        
+        <p>
+          The concept of metadata was completely foreign to me when I began this project. I didn't understand why I needed to include all those extra tags in the head section when the page seemed to display fine without them. It wasn't until I researched search engine optimization and browser behavior that I realized their importance. Adding basic metadata like the viewport tag and page descriptions was simple enough, but I know there's still more I could implement, like OpenGraph tags for social media sharing. This is an area I plan to explore further in future updates to my site.
+        </p>
+        
+        <p>
+          In contrast to these challenges, working with CSS came more naturally to me. I enjoyed the creative process of styling my website to achieve the specific aesthetic I envisioned. From the beginning, I wanted a design that felt feminine, intellectual and romantic. I carefully selected soft pink color schemes, elegant typography and clean layouts to create this atmosphere. Implementing responsive design required some adjustments, but seeing my site adapt beautifully to different screen sizes was incredibly rewarding. I made sure to keep all my styles in external CSS files rather than using inline styles, which made the code much cleaner and easier to maintain.
+        </p>
+        
+        <p>
+          JavaScript presented the steepest learning curve for me. While I could grasp the basic concepts, implementing actual functionality proved much more difficult than I anticipated. Working with APIs was especially challenging. My poem API feature caused me countless headaches. There were times when the poems wouldn't load at all, other times when they would appear briefly then disappear. Each error message in the console felt like another obstacle to overcome. Through persistent debugging and research, I eventually got it working, though I know there's still much more for me to learn about asynchronous JavaScript and API integration.
+        </p>
+        
+        <p>
+          Looking back on this entire process, I can see how much I've grown as a web developer. What began as a series of confusing obstacles has transformed into a functioning website that truly represents my personal style and creative vision. While I'm proud of what I've accomplished, I also recognize areas where I can continue to improve. My struggles with JavaScript have shown me where I need to focus my learning efforts moving forward. The satisfaction of solving each problem along the way has only increased my enthusiasm for web development. This project has been more than just an assignment. It's been a valuable learning experience that has given me confidence in my abilities while also showing me the exciting possibilities for future growth in this field. I look forward to continuing to refine my skills and expand my knowledge as I work on new projects.
+        </p>
+      </article>
+    </section>
+
+    <section class="blog-navigation">
+      <a href="essay2.html" class="nav-arrow prev-arrow">Previous</a>
+      <a href="essay3.html" class="nav-arrow next-arrow">Next</a>
+    </section>
+  </main>
+</body>
+</html>

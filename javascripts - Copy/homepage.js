@@ -104,37 +104,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.getElementById('particles-container');
-  
-  function createParticle() {
-    const particle = document.createElement('div');
-    particle.classList.add('particle');
-    
-    // Random properties
-    const size = Math.random() * 15 + 5;
-    const posX = Math.random() * 100;
-    const duration = Math.random() * 10 + 10;
-    
-    particle.style.width = `${size}px`;
-    particle.style.height = `${size}px`;
-    particle.style.left = `${posX}%`;
-    particle.style.animationDuration = `${duration}s`;
-    
-    container.appendChild(particle);
-    
-    // Remove particle after animation completes
-    setTimeout(() => {
-      particle.remove();
-    }, duration * 1000);
-  }
-  
-  // Create initial particles
-  for (let i = 0; i < 20; i++) {
-    createParticle();
-  }
-  
-  // Keep creating new particles
-  setInterval(createParticle, 1000);
-});
